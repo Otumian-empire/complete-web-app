@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my First Web page</title>
+  </head>
+  <body>
+    <h1>Welcome to my webpage</h1>
+    <!-- the above is a header tag -->
+
+    <h2>This is an h2 header tag</h2>
+    <!-- h[1-6] -->
+
+    <!-- A pararaph automatically adds a link break before the next line -->
+    <p>This is a simple paragraph</p>
+
+    <!-- br tag can also be used to move text to the newline -->
+    <p>
+      This is the first text<br />And this is the second text on the second line
+    </p>
+
+    <!-- <b>text</b> and <strong>text</strong> makes the text bold -->
+    <p>This is a <strong>bold Text</strong></p>
+
+    <!-- <i>text</i> and <em>text</em> does the same thing by making the text italic -->
+    <p>This is <em>slanted Text</em></p>
+
+    <!-- <u>text</u> and <ins>text</ins> underlines the text -->
+    <p>Underline this <ins>text</ins></p>
+
+    <!-- sup and sub tags superscripts and subscripts texts -->
+
+    <!-- del tag strikes through the text -->
+
+    <!-- hr adds a horoizontal rule/line -->
+
+    <!-- unordered list and its list items -->
+    <h3>This is a list of animals we can keep at home</h3>
+    <ul>
+      <li>Foo</li>
+      <li>Monkey</li>
+      <li>cat</li>
+      <li>Dog</li>
+      <li>lizard</li>
+    </ul>
+
+    <!-- ordered list and its list items -->
+    <h3>These are some of the books I have read/would be reading this year</h3>
+    <ol>
+      <li>Structure and Interpretation of computer programs</li>
+      <li>Clean code</li>
+      <li>The Alchemist</li>
+    </ol>
+
+    <!-- Images <img alt='' src='' /> -->
+    <h3>This is an image added to our webpage</h3>
+    <img
+      src="photo_2020-08-16_11-10-20.jpg"
+      alt="Some image I found on my pc"
+      width="100px"
+      height="100px"
+    />
+
+    <p>This is an image of one samurai</p>
+    <!-- this image can be aligned to the left or right or center -->
+    <!-- change src to some url -->
+
+    <!-- Forms and inputs -->
+    <form action="my-web-page_submit" method="get" accept-charset="utf-8">
+      <p>
+        username: <input type="text" name="username" id="username" value="" />
+      </p>
+      <p>under 18: <input type="radio" name="age" /></p>
+      <p>above 18: <input type="radio" value="" name="age" id="" /></p>
+      <p>Remember password: <input type="checkbox" value="" name="" id="" /></p>
+      <p>
+        Some funny words:
+        <select>
+          <option value="">Foo</option>
+          <option value="">Bar</option>
+          <option value="">GNU</option>
+        </select>
+      </p>
+      <p><input type="submit" value="submit" /></p>
+    </form>
+  </body>
+</html>
