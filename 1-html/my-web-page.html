@@ -6,6 +6,7 @@
     <title>my First Web page</title>
   </head>
   <body>
+    <p id="top"><a href="#bottom" target="">Go to Bottom</a></p>
     <h1>Welcome to my webpage</h1>
     <!-- the above is a header tag -->
 
@@ -84,5 +85,75 @@
       </p>
       <p><input type="submit" value="submit" /></p>
     </form>
+
+    <!-- Tables, thead, tbody, tr, td -->
+    <table>
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>Grade</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Daniel</td>
+          <td>A</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Michael</td>
+          <td>C+</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Ike</td>
+          <td>B+</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <!-- anchor links a-tags -->
+    <!-- I will just lint to google and youtube -->
+    <p>
+      <a href="https://www.google.com" target="_blank">See Google?</a>
+    </p>
+    <p><a href="https://www.youtube.com" target="_blank">Youtube?</a></p>
+    <!-- We can put anything at where the anchor text is, be it an image
+      or what ever -->
+
+    <!-- html entities - the browser with understand < as part of a tag as such 
+      use html entities -->
+    <p>This is the less than symbol &lt;</p>
+    <p>This is the greater than symbol &gt;</p>
+    <p>This is the at symbol &commat;</p>
+
+    <!-- Iframes - embed other pages into html -->
+    <div>
+      <iframe
+        src="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/"
+        frameborder="0"
+      ></iframe>
+    </div>
+
+    <!-- Embed a youtube video -->
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/aO_dry8amYY"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- I will leave this link here to take you to the top -->
+    <p id="bottom"><a href="#top" target="">Back to top</a></p>
   </body>
 </html>
