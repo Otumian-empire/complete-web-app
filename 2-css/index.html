@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Web page with style</title>
-
-  <!-- Internal Css -->
-  <!-- <style type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web page with style</title>
+    <!-- Internal Css -->
+    <!-- <style type="text/css">
     p {
       color: red;
       font-size: 20px;
@@ -18,99 +17,169 @@
       color: pink;
     }
   </style> -->
+    <!-- Styles some particulars -->
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
-  <!-- Styles some particulars -->
-  <style type="text/css">
     /* .color-red is a class selector - it selects and applies the styling
       to all the elements that has the class color-red */
     .color-red {
-      color: red;
+        color: red;
     }
 
     .color-blue {
-      color: blue;
+        color: blue;
     }
 
     .color-yellow {
-      color: yellow;
+        color: yellow;
     }
 
 
     .size-50 {
-      font-size: 50px;
+        font-size: 50px;
     }
 
     /* #green is an ID selected just like the class selector but Styles
        a specific element */
 
     #green {
-      color: green;
+        color: green;
     }
 
     #first-div {
-      background-color: pink;
-      font-size:45px;
+        background-color: pink;
+        font-size: 15px;
+        width: 45%;
+        /*float: left;*/
+        /*position: relative;
+        left: 200px;
+        top: 100px;
+        z-index: 2;*/
+        /*opacity: 0.6;*/
+        /* 1 = totally opaque, 0 = totally transparent*/
+
+        /*position: absolute;*/
+        /*position: fixed;*/
+        /*This will not move when the page is scrolled*/
+        /*left: 53.5%;
+        top: 50%;*/
     }
 
     #second-div {
-      background-color: yellow;
-      font-size:45px;
-      width: 50%;
+        background-color: yellow;
+        font-size: 15px;
+        width: 45%;
+        /*float: right;*/
+        /*position: relative;*/
+        /*left: 100px;*/
+        /*top: -100px;*/
+        /*z-index: 1;*/
+
+
     }
-  </style>
+
+    /*.clear-float {
+        clear: both;
+    }*/
+
+    .m {
+        margin: 100px;
+        /* puts spaces outside the element */
+        background-color: blue;
+    }
+
+    .p {
+        padding: 10px;
+        /* puts spaces inside the element */
+    }
+
+    /* removes margins and padding from all elements */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wh-100 {
+        width: 100px;
+        height: 100px;
+        margin: 30px 20px;
+        padding: 15px;
+        float: left;
+        border: 1px black solid;
+        border-radius: 5px;
+    }
+
+    #red-div {
+        background-color: red;
+    }
+
+    #green-div {
+        background-color: green;
+    }
+
+    #blue-div {
+        background-color: blue;
+    }
+    </style>
 </head>
 
 <body>
-  <!--
+    <!--
     There are 3 ways to add css to web pages
     1- incline css with the style attribute of the html element
     2- internal css by adding the style tags in the head tag
       (anywhere works fine)
   3- external css -->
-  <!--
+    <!--
    Change font:
      color with the color key
      font size with the font-size key
    -->
-  <!-- This is styling using inline css -->
-  <!-- <p style="color:red; font-size:30px;">This is a simple paragraph</p> -->
-  <!-- <h1 style="font-size: 50%;">Css, they said is cool</h1> -->
-
-  <!-- A partular element can be styled just by giving it an id and a
+    <!-- This is styling using inline css -->
+    <!-- <p style="color:red; font-size:30px;">This is a simple paragraph</p> -->
+    <!-- <h1 style="font-size: 50%;">Css, they said is cool</h1> -->
+    <!-- A partular element can be styled just by giving it an id and a
     some elements by class -->
-
-
-  <h1>Css, they said is cool</h1>
-  <p>This is a simple paragraph</p>
-
-  <!-- give the second paragraph a font color of red by passing the
+    <h1>Css, they said is cool</h1>
+    <p>This is a simple paragraph</p>
+    <!-- give the second paragraph a font color of red by passing the
     color-red class -->
-  <p class="color-red">This is the second paragraph and it is just a text</p>
-
-  <!-- make the 3rd paragraph blue and a font-size of 50px by class,
+    <p class="color-red">This is the second paragraph and it is just a text</p>
+    <!-- make the 3rd paragraph blue and a font-size of 50px by class,
     color-blue and size-50 -->
-  <p class="color-blue size-50">This is the third paragraph and I wonder why
-    I am creating more paragraphs</p>
-  <p id="green" class="size-50">This is the fourth paragraph</p>
-
-  <!-- Some text within an element(s) can be Styles
+    <p class="color-blue size-50">This is the third paragraph and I wonder why
+        I am creating more paragraphs</p>
+    <p id="green" class="size-50">This is the fourth paragraph</p>
+    <!-- Some text within an element(s) can be Styles
     such as, a p-tag with text, I am a p-tag, only, p-tag can be made green
     using a span -->
-  <p>This is the fifth paragraph with some <span class="
+    <p>This is the fifth paragraph with some <span class="
     color-yellow size-50">yellow text</span></p>
-
-  <!-- A section of the page can be style in a manner that all the elements in
+    <!-- A section of the page can be style in a manner that all the elements in
     it will be affected. Make this background pink with font-size 45px just
     for first div -->
-  <div id="first-div">
-    <p>This is first paragraph in first div</p>
-    <p>This is second paragraph in first div</p>
-  </div>
-
-  <div id="second-div">
-    <p>This is first paragraph in second div</p>
-    <p>This is second paragraph in second div</p>
-  </div>
+    <div id="first-div">
+        <p>This is first paragraph in first div</p>
+        <p>This is second paragraph in first div</p>
+    </div>
+    <div id="second-div">
+        <p>This is first paragraph in second div</p>
+        <p>This is second paragraph in second div</p>
+    </div>
+    <!-- <div class="clear-float">
+        I am clear both
+    </div> -->
+    <div>
+        <p class="m p">This is a simple demonstration of margins</p>
+    </div>
+    <br>
+    <div id="red-div" class="wh-100">red</div>
+    <div id="green-div" class="wh-100">green</div>
+    <div id="blue-div" class="wh-100">blue</div>
 </body>
 
 </html>
