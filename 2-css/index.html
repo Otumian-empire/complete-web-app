@@ -82,9 +82,9 @@
 
     }
 
-    /*.clear-float {
+    .clear-float {
         clear: both;
-    }*/
+    }
 
     .m {
         margin: 100px;
@@ -124,26 +124,84 @@
     #blue-div {
         background-color: blue;
     }
+
+    /*
+        One simple way is also to add google font
+        copy the font url and add it to the head
+        then add the font to the element you wish
+     */
+    .p-f {
+        font-size: 200%;
+        font-family: monospace;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    /* This is pseudo-selector */
+    .p-f:hover {
+        text-decoration: none;
+        font-size: 45px;
+        font-weight: 20px;
+        padding: 5px;
+    }
+
+    /* Alignment center, lefet and right*/
+
+    .align-center {
+        text-align: center;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    .align-left {
+        text-align: left;
+    }
+
+    .align-justify {
+        text-align: justify;
+    }
+
+    .div-tf {
+        width: 75%;
+        background-color: grey;
+        text-align: center;
+    }
+
+    .div-link {
+
+    }
+
+    .google-link {
+        text-decoration: none;
+    }
+
+    .google-link:hover {
+     text-decoration: underline;   
+    }
     </style>
 </head>
 
 <body>
     <!--
-    There are 3 ways to add css to web pages
-    1- incline css with the style attribute of the html element
-    2- internal css by adding the style tags in the head tag
-      (anywhere works fine)
-  3- external css -->
+        There are 3 ways to add css to web pages
+        1- incline css with the style attribute of the html element
+        2- internal css by adding the style tags in the head tag
+          (anywhere works fine)
+        3- external css
+    -->
     <!--
-   Change font:
-     color with the color key
-     font size with the font-size key
-   -->
+        Change font:
+        color with the color key
+        font size with the font-size key
+    -->
     <!-- This is styling using inline css -->
     <!-- <p style="color:red; font-size:30px;">This is a simple paragraph</p> -->
     <!-- <h1 style="font-size: 50%;">Css, they said is cool</h1> -->
     <!-- A partular element can be styled just by giving it an id and a
-    some elements by class -->
+        some elements by class -->
     <h1>Css, they said is cool</h1>
     <p>This is a simple paragraph</p>
     <!-- give the second paragraph a font color of red by passing the
@@ -180,6 +238,24 @@
     <div id="red-div" class="wh-100">red</div>
     <div id="green-div" class="wh-100">green</div>
     <div id="blue-div" class="wh-100">blue</div>
+    <br>
+    <div class="clear-float"></div>
+    <!-- Formatting Texts -->
+    <div class="div-tf">
+        <p class="p-f">This is some text for formatting</p>
+        <p class="align-center">This is some text for formatting center alignment</p>
+        <p class="align-right">This is some text for formatting right alignment</p>
+        <p class="align-left">This is some text for formatting left alignment</p>
+        <p class="align-justify">This is some text for formatting justify alignment</p>
+    </div>
+    <div class="div-link">
+        <p>
+            <a class="google-link" href="https://www.google.com" target="_blank">Google</a>
+            <!-- target can be _blank (new tab), _parent, _self, _top -->
+        </p>
+
+    </div>
+    <br><br><br>
 </body>
 
 </html>
