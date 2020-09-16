@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0 7px;
+    font-family: arial, sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#nav {
+    float: right;
+    margin-top: 15px;
+    margin-right: 23px;
+    padding: 5px 10px;
+    font-family: arial, sans-serif;
+    font-size: 83%;
+}
+
+#sign-in {
+    background-color: #4387fd;
+    color: white;
+    padding: 6px 14px;
+    border: 1px #4387fd solid;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#img-menu {
+    width: 28px;
+    height: 15px;
+    position: relative;
+    top: 5px;
+}
+
+#sign-in:hover,
+#img-menu:hover {
+    text-decoration: none;
+}
+
+
+.clear {
+    clear: both;
+}
+
+#img-google-div img {
+    margin: 113px auto 0 auto;
+    display: block;
+}
+
+#div-form {
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+.div-input {
+    text-align: center;
+    display: inline-block;
+}
+
+input[type=text] {
+    display: block;
+    width: 150%;
+    height: 45px;
+    padding: 12px 20px;
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px #cdc solid;
+    border-radius: 100px;
+    outline: none;
+    position: relative;
+    left: -25%;
+}
+
+.div-input-button {
+    margin-top: 40px;
+    display: inline-block;
+}
+
+input[type=button] {
+    color: #696969;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+}
+
+input[type=button]:hover {
+    border: 1px #cdc solid;
+    color: #111111;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#p-lang {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+#p-lang a {
+    color: blue;
+}
+
+.common-p {
+    background-color: #f5f5f5;
+    border-top: 1px #cdc solid;
+    color: #696969;
+    font-family: arial, sans-serif;
+    font-size: 15px;
+}
+
+#p-country {
+    margin: 100px 0 0 0;
+    padding: 10px 25px;
+}
+
+#div-float {
+    margin: 0;
+    padding: 25px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
