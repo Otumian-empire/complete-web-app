@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <!-- Add js in 3 ways -->
+    <!-- inline -->
+    <!-- <button  onClick="alert('hi')">Click me</button> -->
+
+    <!-- internal -->
+    <!-- <button id="btn">Click me</button>
+    <script> alert('hi') </script> -->
+
+    <!-- Accessing elements on the page and changing its inner HTML -->
+    <!-- <p id="text">Hello there!!</p> -->
+    <!-- <script type="text/javascript">
+        // document.getElementById('text').innerHTML = "I have been changed" 
+
+        // This is a one line comment
+        /* This is a
+            multiline comment
+            The cat jumps over the moon
+        */
+
+    </script> -->
+
+    <!-- Responding to to a click -->
+    <!-- <p id="text-to-change">Hello there!!</p>
+    <button id="button-to-change-text">Click me</button>
+    <script type="text/javascript"> 
+        document.getElementById('button-to-change-text').onclick = function() {
+            document.getElementById('text-to-change').innerHTML = "I am good~!!!~"
+        }
+    </script> -->
+
+    <!-- Changin the content of the website -->
+    <p id="cText">This is the first paragraph</p>
+    <button id="cButton">Append text</button>
+    <script type="text/javascript"> 
+        document.getElementById('cButton').onclick = function() {
+            document.getElementById('cText')
+                .innerHTML += " and I am awesome duuude!!~!"
+        }
+    </script>
+
+
+
+</body>
+
+</html>
