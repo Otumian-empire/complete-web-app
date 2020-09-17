@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mini challenge - Disappearing circle</title>
+    <style type="text/css">
+        /* 
+        create a style for the circle with equal width and height
+        then make the border-radius a 100%
+        */
+        .circle {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border-radius: 100%;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- create red, blue and yellow circle -->
+    <div id="red" class="circle red"></div>
+    <div id="blue" class="circle blue"></div>
+    <div id="green" class="circle green"></div>
+
+    <script type="text/javascript">
+        // use javascript to make a clicked circle disappear
+        function disappear(id) {
+            document.getElementById(id).onclick = function() {
+                document.getElementById(id).style.display = "none"
+            }
+        }
+
+        disappear('red')
+        disappear('blue')
+        disappear('green')
+
+
+    </script>
+</body>
+
+</html>

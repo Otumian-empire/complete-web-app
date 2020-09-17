@@ -36,13 +36,40 @@
     </script> -->
 
     <!-- Changin the content of the website -->
-    <p id="cText">This is the first paragraph</p>
+    <!-- <p id="cText">This is the first paragraph</p>
     <button id="cButton">Append text</button>
     <script type="text/javascript"> 
         document.getElementById('cButton').onclick = function() {
             document.getElementById('cText')
                 .innerHTML += " and I am awesome duuude!!~!"
         }
+    </script> -->
+
+    <!-- Manipulate style -->
+    <h1>Change Style color</h1>
+    <p id="msText">This is the first paragraph</p>
+
+    <button id="msButtonBlue">Color Blue</button>
+    <button id="msButtonRed">Color Red</button>
+    <button id="msButtonYellow">Color Yellow</button>
+    <button id="msButtonGreen">Color Green</button>
+
+    <script type="text/javascript">
+        function changeTextColor(btnElement, color) {
+             document.getElementById(btnElement).onclick = function() {
+                document.getElementById("msText").style.color = color
+             }
+        }
+
+        changeTextColor('msButtonBlue', 'blue')
+        changeTextColor('msButtonRed', 'red')
+        changeTextColor('msButtonYellow', 'yellow')
+        changeTextColor('msButtonGreen', 'green')
+
+        // document.getElementBy[Id]([Id]).style.attribute
+        // if attribute is hyphenated, use camelCase
+        // as in font-size then become fontSize and border-radius, norderRadius
+       
     </script>
 
 
