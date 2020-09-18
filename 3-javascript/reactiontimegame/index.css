@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+}
+
+#shape {
+    margin: 15px;
+    display: none;
+    position: relative;
+}
+
+.bold {
+    font-weight: bold;
+}
