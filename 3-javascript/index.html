@@ -145,6 +145,59 @@
             console.log('No good man')
         }
 
+        // Mini challenge - How many finger am I having (howmanyfinger.html)
+
+        // Loops
+
+        for (var count = 0; count < 10; count++) {
+            console.log(count)
+        }
+
+        var techies = [
+            'stackoverflow', 'geeksforgeeks', 'stackexchange', 'youtube',
+             'hackerrank', 'hackenoon', 'hackerearth', 'amazon', 'MIT'
+        ]
+
+        for (var i = 0; i < techies.length; i++) {
+            console.log(i + ' - ' + techies[i])
+        }
+
+        // While Loops
+
+        var wcount = 0;
+        while (wcount < 10) {
+            console.log(wcount)
+            wcount++
+        }
+
+        console.log('Looping through techies using a while loop')
+
+        var wi = 0;
+        while (wi < techies.length) {
+            console.log(wi + ' - ' + techies[wi])
+             wi++
+        }
+
+        // functions
+
+        function functionName(arg) {
+            // console.log(arg)
+            return arg
+        }
+
+        console.log(functionName('Hello'))
+
+        function calculateWeight(mass) {
+            const GRAVITY = 9.8;
+            return mass * GRAVITY;
+        }
+
+
+        const someMass = 30
+        const someWeight = calculateWeight(someMass)
+
+        console.log(`An object of mass, ${someMass}kg has a weight of ${someWeight}N`)
+
     </script>
 
 
