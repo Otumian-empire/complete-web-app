@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>How many fingers - Guess Game Challenge</title>
+    </head>
+    <body>
+        <div>
+            <p>How many fingers am I holding?</p>
+            <input type="text" id='guess' />
+            <input type="submit" id='btn' value="submit" />
+        </div>
+        <script type="text/javascript">
+            document.getElementById('btn').onclick = function() {
+                var guess = document.getElementById('guess').value
+                var randomNumber = Math.floor(Math.random() * 10 % 5)
+                if (guess == randomNumber) {
+                    alert("Awesome, you guessed right")
+                } else {
+                    alert("Sorry, guess was " + randomNumber)
+                }
+                document.getElementById('guess').value = ""
+            }
+        </script>
+    </body>
+</html>
+
