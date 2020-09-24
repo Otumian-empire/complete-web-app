@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML + CSS Project</title>
+    <style type="text/css">
+    /* general css starts here */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        width: 75%;
+        margin: 10px auto;
+        text-decoration: underline;
+        padding: 5px;
+        background-color: #ccc;
+        font-family: monospace;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        padding: 6px;
+        margin: 3px;
+        border: 1px black solid;
+        border-radius: 3px;
+        text-decoration: underline;
+        font-style: oblique;
+        background-color: #234;
+        color: white;
+    }
+
+    iframe {
+        margin: 10px auto;
+        width: 560px;
+        height: 315px;
+    }
+
+    .float-left {
+        float: left;
+    }
+
+    .float-right {
+        float: right;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    .align-left {
+        text-align: left;
+    }
+
+    /* general css ends here */
+
+
+    /* nav starts here */
+    #div-nav {
+        width: 75%;
+        margin: 3px auto;
+        padding: 5px;
+        background-color: #ddd;
+    }
+
+    #nav {
+        width: 50%;
+        height: 45px;
+        margin: 3px auto;
+        color: white;
+        text-align: center;
+    }
+
+    #nav>li {
+        margin: 0 auto;
+        padding: 5px;
+        display: inline;
+        list-style: none;
+    }
+
+    /* nav ends here */
+
+
+    /* video starts here */
+    #videos {
+        width: 95%;
+        margin: 25px auto;
+        /*background-color: #0d0e01;*/
+    }
+
+    /* video ends here */
+
+
+    /* about us starts here */
+    #about-us>ol {
+        width: 40%;
+        margin: 45px auto;
+    }
+
+    #about-us>ol>li {
+        margin: 4px auto;
+        padding: 5px;
+        display: block;
+        list-style: none;
+    }
+
+    #about-us>ol>li:hover {
+        background-color: #234;
+        color: white;
+        padding: 6px;
+        border: 1px black solid;
+        border-radius: 3px;
+    }
+
+    /* about us ends here */
+
+
+    /* contact us starts here */
+    #contact-us {
+        width: 70%;
+        border-radius: 10px;
+        margin: 5px auto;
+    }
+
+    .b-rad {
+        border: 1px black solid;
+        border-radius: 3px;
+    }
+
+    form {
+        padding: 6px;
+        font-size: 20px;
+    }
+
+    .div-label-input {
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    label {
+        width: 30%;
+        height: 70px;
+        margin: 10px auto;
+        height: 85%;
+    }
+
+    input {
+        width: 60%;
+        height: 35px;
+        margin: 10px auto;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    textarea {
+        width: 60%;
+        height: 210px;
+        margin: 10px auto;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    select {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin: 10px auto;
+        padding: 5px;
+        position: relative;
+        left: -50%;
+        top: -10%;
+    }
+
+    #div-btn {
+        width: 50%;
+        margin: 5px auto;
+        padding: 10px;
+    }
+
+    input[type=submit] {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        font-size: 25px;
+    }
+
+    input[type=submit]:hover {
+        padding: 9px;
+        background-color: #234;
+        color: white;
+    }
+
+    /* contact us ends here */
+
+
+    /* footer starts here */
+    #footer {
+        width: 70%;
+        margin: 15px auto 50px auto;
+        padding: 10px;
+    }
+
+    /* foote ends here */
+    </style>
+</head>
+
+<body>
+    <h1>Putting all together</h1>
+    <div id="div-nav">
+        <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#github">Github</a></li>
+            <li><a href="#down">Go down</a></li>
+        </ul>
+    </div>
+    <div id="videos">
+        <div class="float-left">
+            <iframe src="https://www.youtube-nocookie.com/embed/aO_dry8amYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="float-right">
+            <iframe src="https://www.youtube-nocookie.com/embed/aO_dry8amYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="about-us">
+        <h1>About Us</h1>
+        <p class="align-center">We are a group of developers and we love what we do</p>
+        <p class="align-center">We build: </p>
+        <ol class="align-center">
+            <li>UI/UX design</li>
+            <li>Animations</li>
+            <li>Front end design with css and bootstrap x</li>
+            <li>React, Angular and Vue for Front End</li>
+            <li>Database design and Implementation</li>
+            <li>Database development with MySQL, PostgreSQL, SQLite, MondoDB, MariaDB</li>
+            <li>Flask, Django, Vanilla Php, Laravel, Node/Express, for Back end</li>
+            <li>QT/Python/C++, Js/Node/Electron and JavaFx/Ktor for Destop App developement</li>
+            <li>Java/Kotlin/Android, Flutter, Swift and React Native for Mobile App development</li>
+        </ol>
+    </div>
+    <div id="contact-us">
+        <h1>Contact Us</h1>
+        <form action="" class="b-rad">
+            <div class="div-label-input">
+                <label class="float-left align-right" for="first-name">First Name</label>
+                <input type="text" class="float-right b-rad" id="first-name" placeholder="First Name">
+                <div class="clear"></div>
+            </div>
+            <div class="div-label-input">
+                <label class="float-left align-right" for="last-name">Last Name</label>
+                <input type="text" class="float-right b-rad" id="last-name" placeholder="Last Name">
+                <div class="clear"></div>
+            </div>
+            <div class="div-label-input">
+                <label class="float-left align-right" for="email">Email</label>
+                <input type="email" class="float-right b-rad" name="" id="email" placeholder="Email">
+                <div class="clear"></div>
+            </div>
+            <div class="div-label-input">
+                <label class="float-left align-right" for="message">Message</label>
+                <textarea name="" i class="float-right b-rad" d="message" placeholder="Message"></textarea>
+                <div class="clear"></div>
+            </div>
+            <div class="div-label-input">
+                <label class="float-left align-right" for="rate">Rate</label>
+                <select name="rate" class="float-right b-rad" id="rate">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <div class="clear"></div>
+            </div>
+            <div id="div-btn">
+                <input type="submit" value="submit" class="b-rad">
+            </div>
+        </form>
+    </div>
+    <div id='footer'>
+        <p class='float-left'>
+            <a href="https://www.github.com/otumian-empire">Click this to visit my gihub page</a>
+        </p>
+        <p id="down" class='float-right'><a href="#nav">Go up</a></p>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
