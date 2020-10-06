@@ -3,23 +3,23 @@
 <head>
     <title>Jquery</title>
     <style type="text/css">
-    .solid {
-        width: 200px;
-        height: 200px;
-        margin: 10px;
-    }
+        .solid {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
 
-    .circle {
-        border-radius: 100%;
-    }
+        .circle {
+            border-radius: 100%;
+        }
 
-    .green {
-        background-color: green;
-    }
+        .green {
+            background-color: green;
+        }
 
-    .red {
-        background-color: red;
-    }
+        .red {
+            background-color: red;
+        }
     </style>
 </head>
 
@@ -35,104 +35,143 @@
     </div>
     <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
     <script type="text/javascript">
-    if (typeof jQuery == 'undefined') {
-        alert('Please add jquery-3.5.1.min.js or higer to 4-jquery/ or a from  cdn')
-    }
+        if (typeof jQuery == 'undefined') {
+            alert('Please add jquery-3.5.1.min.js or higer to 4-jquery/ or a from  cdn')
+        }
 
-    // detecting a click
-    // Mini challenge - green circle and 2 red squares -> DONE
+        // detecting a click
+        // Mini challenge - green circle and 2 red squares -> DONE
 
-    // select the circle by id
-    // document.getElementById('circle') == $("#circle")
-    // $("#circle").click(function() {
-    //     alert("The circle was clicked")
-    // })
+        // select the circle by id
+        // document.getElementById('circle') == $("#circle")
+        // $("#circle").click(function() {
+        //     alert("The circle was clicked")
+        // })
 
-    // $("#first-square").click(function() {
-    //     alert("The first square was clicked")
-    // })
+        // $("#first-square").click(function() {
+        //     alert("The first square was clicked")
+        // })
 
-    // $("#second-square").click(function() {
-    //     alert("The second square was clicked")
-    // })
+        // $("#second-square").click(function() {
+        //     alert("The second square was clicked")
+        // })
 
-    // change style on click - selector.css(attr, val)
-    // $("#circle").click(function() {
-    //     $("#circle").css('width', '500px')
-    //     $("#circle").css('background-color', 'red')
-    // })
+        // change style on click - selector.css(attr, val)
+        // $("#circle").click(function() {
+        //     $("#circle").css('width', '500px')
+        //     $("#circle").css('background-color', 'red')
+        // })
 
-    // get value of an attribute - selector.css(attr)
-    // $("#circle").click(function() {
-    //     alert("The circle has a width of " + $("#circle").css('width'))
-    // })
+        // get value of an attribute - selector.css(attr)
+        // $("#circle").click(function() {
+        //     alert("The circle has a width of " + $("#circle").css('width'))
+        // })
 
-    // make element disappear on click
-    // $("#circle").click(function() {
-    //     $("#circle").css('display', 'none')
-    // })
+        // make element disappear on click
+        // $("#circle").click(function() {
+        //     $("#circle").css('display', 'none')
+        // })
 
-    // $("#first-square").click(function() {
-    //     $("#first-square").css('display', 'none')
-    // })
+        // $("#first-square").click(function() {
+        //     $("#first-square").css('display', 'none')
+        // })
 
-    // $("#second-square").click(function() {
-    //     $("#second-square").css('display', 'none')
-    // })
+        // $("#second-square").click(function() {
+        //     $("#second-square").css('display', 'none')
+        // })
 
-    // a better solution (can be weird though) would be to use `this`
-    // just passing div will also get the external div
-    // all our shape divs have the solid class
-    // $("div .solid").click(function() {
-    //     $(this).css('display', 'none')
-    // })
+        // a better solution (can be weird though) would be to use `this`
+        // just passing div will also get the external div
+        // all our shape divs have the solid class
+        // $("div .solid").click(function() {
+        //     $(this).css('display', 'none')
+        // })
 
-    // animate content
-    // let s = 100;
-    // $("#circle").click(function() {
-    // $(this).css('width', s += 5)
-    // $(this).css('height', s += 5)
+        // animate content
+        // let s = 100;
+        // $("#circle").click(function() {
+        // $(this).css('width', s += 5)
+        // $(this).css('height', s += 5)
 
-    // within 2000 millisec, animate the width and height to 400px
-    // $(this).animate({width: "400px"}, 2000)
-    // $(this).animate({height: "400px"}, 2000)
+        // within 2000 millisec, animate the width and height to 400px
+        // $(this).animate({width: "400px"}, 2000)
+        // $(this).animate({height: "400px"}, 2000)
 
-    // for (let i = 0; i < 10; i++) {
-    //     $(this).animate({ width: i * 100 + "px" }, 2000)
-    //     $(this).animate({ height: i * 100 + "px" }, 2000)
-    // }
+        // for (let i = 0; i < 10; i++) {
+        //     $(this).animate({ width: i * 100 + "px" }, 2000)
+        //     $(this).animate({ height: i * 100 + "px" }, 2000)
+        // }
 
-    // $(this).animate({
-    //     width: "250px",
-    //     height: "250px",
-    //     marginTop: "100px",
-    //     marginLeft: "100px",
-    // }, 2000, function() {
-    //     $(this).css('background-color', "#1dd")
-    // })
+        // $(this).animate({
+        //     width: "250px",
+        //     height: "250px",
+        //     marginTop: "100px",
+        //     marginLeft: "100px",
+        // }, 2000, function() {
+        //     $(this).css('background-color', "#1dd")
+        // })
 
-    // the line below was meant to chnage the background-color after the animation
-    // but that happens before the animation completes
-    // rather, passing a callback function as a 3rd arg to the animate method,
-    // does the trick
-    // $(this).css('background-color', "#1dd")
+        // the line below was meant to chnage the background-color after the animation
+        // but that happens before the animation completes
+        // rather, passing a callback function as a 3rd arg to the animate method,
+        // does the trick
+        // $(this).css('background-color', "#1dd")
 
-    // })
+        // })
 
-    // Ajax
-    // read the content of info.txt using get
-    // $.get('info.txt', function(data) {
-    //     $('#data').text(data)
-    // })
+        // Ajax
+        // read the content of info.txt using get
+        // $.get('info.txt', function(data) {
+        //     $('#data').text(data)
+        // })
 
-    // read the content of info.txt using ajax
-    // $.ajax('info.txt')
-    //     .done(function(data) {
-    //         $('#data').text(data)
-    //     })
-    //     .fail(function() {
-    //         $('#data').text("Could not load data")
-    //     })
+        // read the content of info.txt using ajax
+        // $.ajax('info.txt')
+        //     .done(function(data) {
+        //         $('#data').text(data)
+        //     })
+        //     .fail(function() {
+        //         $('#data').text("Could not load data")
+        //     })
+
+        // regular expressions
+        // i - flag for case-incentive
+        // g - flag for global selection (more than 0 characters)
+        // /regex/ - regual expression is place is /regEx/
+        
+        // function log(res) {
+        //     if (res != null) {
+        //         console.log(res + ": is in data")
+        //     }
+        //     else {
+        //         console.log(res + ": is not in data")
+        //     }
+        // }
+
+        // const data = "My name is Adam"
+
+        // // is
+        // let res = data.match(/is/)
+        // log(res)
+
+        // // lets search for adam which is case sensitive
+        // res = data.match(/adam/)
+        // log(res)
+
+        // res = data.match(/Adam/)
+        // log(res)
+
+        // res = data.match(/adAm/i)
+        // log(res)
+
+        // // the g flag returns the number of the item that appears in the data
+        // res = data.match(/a/g)
+        // log(res)
+
+
+        // mini project - form validation
+
+
     </script>
 </body>
 
