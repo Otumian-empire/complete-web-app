@@ -2,6 +2,9 @@
 
 <head>
     <title>Jquery</title>
+    <link rel="stylesheet" href="./jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="./jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="./jquery-ui-1.12.1/jquery-ui.theme.min.css">
     <style type="text/css">
         .solid {
             width: 200px;
@@ -20,6 +23,14 @@
         .red {
             background-color: red;
         }
+
+        .yellow {
+            background: yellow;
+        }
+
+        .blue {
+            background: blue;
+        }
     </style>
 </head>
 
@@ -30,10 +41,40 @@
         <!-- <div id="circle" class="solid circle green"></div> -->
         <!-- 2 red circles -->
         <!-- <div id="first-square" class="solid red"></div>
-        <div id="second-square" class="solid red"></div> -->
-        <p id="data">I am a big shark</p>
+        <div id="second-square" class="solid yellow"></div>
+        <div id="third-square" class="solid blue"></div> -->
+
+        <!-- <p id="data">I am a big shark</p> -->
+
+        <div id="parent">
+            <h1>I am first child</h1>
+            <div id="first-child">
+               first-div
+            </div>
+
+            <h1>I am second child</h1>
+            <div id="second-child">
+               second-div
+            </div>
+
+            <h1>I am third child</h1>
+            <div id="third-child">
+               third-div
+            </div>
+
+            <h1>I am fourth child</h1>
+            <div id="fourth-child">
+                fourth-div
+            </div>
+        </div>
+
+        <!-- <div id="resizable" class="ui-widget-content">
+            <h3 class="ui-widget-header">Resizable</h3>
+        </div> -->
     </div>
     <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <!-- https://api.jqueryui.com/ -->
+    <script type="text/javascript" src="./jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script type="text/javascript">
         if (typeof jQuery == 'undefined') {
             alert('Please add jquery-3.5.1.min.js or higer to 4-jquery/ or a from  cdn')
@@ -138,7 +179,7 @@
         // i - flag for case-incentive
         // g - flag for global selection (more than 0 characters)
         // /regex/ - regual expression is place is /regEx/
-        
+
         // function log(res) {
         //     if (res != null) {
         //         console.log(res + ": is in data")
@@ -170,6 +211,34 @@
 
 
         // mini project - form validation
+
+
+        // adding plugins to jQuery
+        // $('#circle').draggable()
+
+        // draggable and resizables
+        // $('#first-square').draggable({ axis: "x" })
+        // $('#second-square').draggable({ axis: "y" })
+
+        // $("#resizable").resizable();
+        // $('#third-square').resizable();
+        // $('#third-square').draggable()
+
+        // Droppables
+        // drop the circle into the red square
+        // $('#first-square').draggable()
+        // $('#third-square').droppable({
+        //     drop: function (event, ui) {
+        //         $(this).css('backgroundColor', "grey")
+        //     }
+        // })
+
+        // accordions and sortables
+        // $('#parent').accordion()
+        // $('#parent').sortable()
+        // $('#parent').disableSelection()
+
+
 
 
     </script>
