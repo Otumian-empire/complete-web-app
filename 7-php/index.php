@@ -148,8 +148,16 @@ echo "<br>";
 // echo "$username has a password of, $password<br>";
 
 // consider the form below
-$username = $_GET['username'] ? $_GET['username'] : "Unknown user";
-$password = $_GET['password'] ? $_GET['password'] : "empty password";
+$username = "Unknown user";
+$password = "empty password";
+
+if (isset($_GET['username'])) {
+    $username =  $_GET['username'];
+}
+
+if (isset($_GET['password'])) {
+    $password =  $_GET['password'];
+}
 
 echo "$username has a password of, $password<br>";
 
