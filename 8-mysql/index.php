@@ -1,4 +1,6 @@
 <?php
+// session_start();  // start session
+
 define("HOST", "localhost");
 define("USER", "root");
 define("PASSWORD", "");
@@ -11,6 +13,8 @@ $link = mysqli_connect(HOST, USER, PASSWORD, DATABASE, PORT);
 if (mysqli_connect_error()) {
     die("Connection error<br>");
 }
+
+
 
 // insert
 // $s_email = 'man1@gmail.com';
@@ -67,9 +71,10 @@ if (mysqli_connect_error()) {
 
 // selecting with LIKE %-anything
 // mysqli_real_escape_string(str)
+$err_msg = "";
 
-if (!isset($_POST['email']) || !isset($_POST['password'])) {
-    echo ("Email and Password required");
+if (!isset($_POST['email']) || $_POST['email'] == "" || !isset($_POST['password']) || $_POST['password'] == "") {
+    $err_msg = "Enter your email and password";
 } else {
 
     $email = mysqli_real_escape_string($link, $_POST['email']);
@@ -78,27 +83,26 @@ if (!isset($_POST['email']) || !isset($_POST['password'])) {
     $select_query = "SELECT `id` FROM `susers` WHERE `email` =" . $email;
     $result =  mysqli_query($link, $select_query);
 
-    echo $result . " select <br>";
 
     if ($result) {
-        echo "Email already taken";
+        $err_msg = "Email already taken";
     } else {
         $insert_query = "INSERT INTO `susers`(`email`, `password`) VALUES(" . $email . "," . $password . ")";
-        $result =  mysqli_query($link, $insert_query);
 
-        if ($result) {
-            echo "Signup successful";
+        if (mysqli_query($link, $insert_query)) {
+            // $_SESSION['email'] = $email;
+            $err_msg = explode("@", $email)[0] .  "Signup successful";
         } else {
-            echo "Signup unsuccessful";
+            $err_msg = "Signup unsuccessful";
         }
     }
-
-    unset($_POST);
-    unset($email);
-    unset($password);
 }
 
-echo "<br>";
+// unset($_POST);
+// unset($email);
+// unset($password);
+
+echo $err_msg . "<br>";
 
 ?>
 
